@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두더지 잡기!</title>
+    <style>
+        section{
+            width: 800px; height: 800px; border: 5px solid #21ABF1; margin: 50px auto; background: url("./image/bg.png") no-repeat center; background-size: contain;
+        }
+        section > button{
+            width: 250px; height: 150px; object-fit: cover; border: 0px none; background: transparent;
+            margin: 0px auto; display: block; margin-top: 600px; cursor: pointer; transition: all 0.25s;
+        }
+        section > button:hover{
+            transform: scale(1.1);
+        }
+        section > button > img{ display: block; width: 100%; height: 100%; object-fit: cover; }
+    </style>
+</head>
+<body>
+    <section>
+        <button class="play"><img src="./image/playbtn.png" alt="play!"></button>
+    </section>
+    <script>
+        document.querySelector('.play').addEventListener('click', ()=>{
+            window.location.href='game.html';
+        });
+    </script>
+</body>
+</html>
